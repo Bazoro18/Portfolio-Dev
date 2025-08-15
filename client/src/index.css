@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(222, 47%, 11%);
+  --foreground: hsl(213, 16%, 57%);
+  --card: hsl(222, 35%, 15%);
+  --card-foreground: hsl(213, 16%, 57%);
+  --popover: hsl(222, 47%, 11%);
+  --popover-foreground: hsl(213, 16%, 57%);
+  --primary: hsl(178, 25%, 45%);
+  --primary-foreground: hsl(222, 47%, 11%);
+  --secondary: hsl(210, 40%, 85%);
+  --secondary-foreground: hsl(222, 47%, 11%);
+  --muted: hsl(222, 35%, 15%);
+  --muted-foreground: hsl(213, 16%, 57%);
+  --accent: hsl(178, 25%, 45%);
+  --accent-foreground: hsl(210, 40%, 85%);
+  --destructive: hsl(0, 62%, 30%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --border: hsl(215, 16%, 25%);
+  --input: hsl(215, 16%, 25%);
+  --ring: hsl(178, 25%, 45%);
+  --chart-1: hsl(178, 25%, 45%);
+  --chart-2: hsl(160, 60%, 45%);
+  --chart-3: hsl(30, 80%, 55%);
+  --chart-4: hsl(280, 65%, 60%);
+  --chart-5: hsl(340, 75%, 55%);
+  --sidebar: hsl(222, 35%, 15%);
+  --sidebar-foreground: hsl(213, 16%, 57%);
+  --sidebar-primary: hsl(178, 25%, 45%);
+  --sidebar-primary-foreground: hsl(210, 40%, 85%);
+  --sidebar-accent: hsl(222, 35%, 15%);
+  --sidebar-accent-foreground: hsl(178, 25%, 45%);
+  --sidebar-border: hsl(215, 16%, 25%);
+  --sidebar-ring: hsl(178, 25%, 45%);
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.5rem;
+  
+  /* Portfolio specific colors */
+  --portfolio-bg: hsl(222, 47%, 11%);
+  --portfolio-text: hsl(213, 16%, 57%);
+  --portfolio-accent: hsl(178, 25%, 45%);
+  --portfolio-highlight: hsl(210, 40%, 85%);
+  --portfolio-card: hsl(222, 35%, 15%);
+  --portfolio-border: hsl(215, 16%, 25%);
+}
+
+.dark {
+  --background: hsl(222, 47%, 11%);
+  --foreground: hsl(213, 16%, 57%);
+  --card: hsl(222, 35%, 15%);
+  --card-foreground: hsl(213, 16%, 57%);
+  --popover: hsl(222, 47%, 11%);
+  --popover-foreground: hsl(213, 16%, 57%);
+  --primary: hsl(178, 25%, 45%);
+  --primary-foreground: hsl(222, 47%, 11%);
+  --secondary: hsl(210, 40%, 85%);
+  --secondary-foreground: hsl(222, 47%, 11%);
+  --muted: hsl(222, 35%, 15%);
+  --muted-foreground: hsl(213, 16%, 57%);
+  --accent: hsl(178, 25%, 45%);
+  --accent-foreground: hsl(210, 40%, 85%);
+  --destructive: hsl(0, 62%, 30%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --border: hsl(215, 16%, 25%);
+  --input: hsl(215, 16%, 25%);
+  --ring: hsl(178, 25%, 45%);
+  --chart-1: hsl(178, 25%, 45%);
+  --chart-2: hsl(160, 60%, 45%);
+  --chart-3: hsl(30, 80%, 55%);
+  --chart-4: hsl(280, 65%, 60%);
+  --chart-5: hsl(340, 75%, 55%);
+  --sidebar: hsl(222, 35%, 15%);
+  --sidebar-foreground: hsl(213, 16%, 57%);
+  --sidebar-primary: hsl(178, 25%, 45%);
+  --sidebar-primary-foreground: hsl(210, 40%, 85%);
+  --sidebar-accent: hsl(222, 35%, 15%);
+  --sidebar-accent-foreground: hsl(178, 25%, 45%);
+  --sidebar-border: hsl(215, 16%, 25%);
+  --sidebar-ring: hsl(178, 25%, 45%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-portfolio-bg text-portfolio-text font-inter antialiased min-h-screen;
+  }
+  
+  html {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .portfolio-bg {
+    background-color: var(--portfolio-bg);
+  }
+  
+  .portfolio-text {
+    color: var(--portfolio-text);
+  }
+  
+  .portfolio-accent {
+    color: var(--portfolio-accent);
+  }
+  
+  .portfolio-highlight {
+    color: var(--portfolio-highlight);
+  }
+  
+  .portfolio-card {
+    background-color: var(--portfolio-card);
+  }
+  
+  .portfolio-border {
+    border-color: var(--portfolio-border);
+  }
+}
