@@ -10,15 +10,14 @@ const Navigation = () => {
     { path: '/about', label: 'About' },
     { path: '/projects', label: 'Projects' },
     { path: '/blogs', label: 'Blogs' },
+    { path: '/resources', label: 'Resources' },
     { path: '/contact', label: 'Contact' },
   ];
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: ExternalLink, href: '#', label: 'Blog' },
-    { icon: FileText, href: '#', label: 'Resume' },
-    { icon: Mail, href: '#', label: 'Email' },
+    { icon: Github, href: 'https://github.com/Bazoro18/', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/imiteshhh99/', label: 'LinkedIn' },
+    { icon: Mail, href: 'imiteshhh@gmail.com', label: 'Email' },
   ];
 
   const isActive = (path: string) => {
